@@ -1,0 +1,538 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    display: flex;
+    border-style: dotted none none;
+    border-color: #1e72a6;
+    border-width: 5px;
+    width: 5%;
+    margin:  auto ;
+   
+
+    
+}
+/* STart of SEction 1 */
+/* logo  */
+.rohan{
+    color: rgb(197, 152, 96);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.25rem;
+    transition: 1s;
+}
+.logo-active{
+    transform: rotate(360deg);
+    
+}
+.rohan:hover{
+    font-size: 1.5625rem;
+}
+/* logo end */
+/* navigation bar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+    background :linear-gradient(to right top,#CBF1F5, #A6E3E9);
+    min-height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 9998;
+    
+
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+
+}
+.nav-links li{
+    list-style: none;
+    transition-duration: .3s;
+}
+.nav-links li:hover{
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+/* \End of navigation bar */
+/* contact button */
+.btn {
+    -webkit-border-radius: 19;
+    -moz-border-radius: 19;
+    border-radius: 19px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 1rem;
+    background: #58abe3;
+    padding: 7px 13px 7px 13px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #1e72a6;
+    text-decoration: none;
+  }
+/* End of contact button */
+
+
+.burgerlines{
+    display: none;
+    margin-right: -90px;
+    z-index: 999;
+    
+}
+.burgerlines div{
+    background-color: rgb(24, 22, 22);
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    transition: 0.5s;
+    
+}
+@media  (max-width: 1024px){
+    .nav-links{
+        font-size: 1.05rem;
+        width: 50%;
+    }
+    .btn{
+        font-size: 1.05rem;
+    }
+}
+@media  (max-width: 1200px){
+    .nav-links{
+        
+        width: 40%;
+    }
+}
+@media  (max-width: 900px){
+    .nav-links{
+        
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width : 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        margin-left: -100px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: rgb(113, 221, 248);
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        width: 60%;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+        
+    }
+    .burgerlines{
+        display: block;
+        cursor: pointer;
+        
+    }
+    
+}
+.nav-active{
+    transform: translateX(0%);
+}
+li.fade{
+    opacity: 1;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+/* landing page */
+.homepage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #E3FDFD;
+    
+}
+.clouds{
+    opacity: .6;
+}
+.cloud1{
+    position: absolute;
+    height: 35vh;
+    right: 18%;
+    top: 10%;
+}
+.cloud2{
+    position: absolute;
+    height: 35vh;
+    right: 45%;
+    top: 10%;
+}
+.child{
+    position: absolute;
+    align-items: center;
+    height: 60vh;
+    right: 8%;
+    top: 18%;
+
+}
+/* for circle 1 */
+.circle1{
+    position:absolute;
+    align-items: center;
+    height: 45vh;
+    left: 10%;
+    top: 20%;
+}
+.hi{
+    position: absolute;
+    font-weight: bold;
+    font-size: 4.375rem;
+    left: 17%;
+    top: 34%;
+    transform: rotate(-20deg);
+    text-transform: uppercase;
+    font-family: 'Festive', cursive;
+}
+
+/* End of circle ! */
+/* for circle 2 */
+.circle2{
+    position: absolute;
+    align-items: center;
+    height: 38vh;
+    left: 18%;
+    top: 45%;
+}
+.myname{
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.1875rem;
+    left: 19.5%;
+    top: 58%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    transform: rotate(-10deg);
+}
+/* End of circle 2 */
+/* For circle 3 */
+.circle3{
+    position:absolute;
+    align-items: center;
+    height: 28vh;
+    left: 30%;
+    top: 32%;
+}
+.std{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5625rem;
+    left: 33%;
+    top: 39%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Redressed', cursive;
+    transform: rotate(10deg);
+}
+.mid-a{
+    font-size: 2.1875rem;
+}
+/* responsiveness */
+@media (max-width : 1024px) {
+    .child{
+        position: absolute;
+        align-items: center;
+        height: 45vh;
+        right: -2%;
+        top: 12%;
+    
+    }
+    .cloud1{
+        position: absolute;
+        height: 15vh;
+        right: 52%;
+        top: 10%;
+    }
+    .cloud2{
+        position: absolute;
+        height: 15vh;
+        right: 25%;
+        top: 10%;
+    }
+    .circle1{
+        position:absolute;
+        align-items: center;
+        height: 35vh;
+        left: 1%;
+        top: 40%;
+    }
+    .hi{
+        position: absolute;
+        font-weight: bold;
+        font-size: 5.75rem;
+        left: 16%;
+        top: 48%;
+        transform: rotate(-20deg);
+        text-transform: uppercase;
+        font-family: 'Festive', cursive;
+    }
+    .circle2{
+        position:absolute;
+        align-items: center;
+        height: 28vh;
+        left: 12%;
+        top: 58%;
+    }
+    .myname{
+        position: absolute;
+        font-weight: bold;
+        font-size: 2rem;
+        left: 19.5%;
+        top: 67%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        transform: rotate(-16deg);
+    }
+    
+    .circle3{
+        position:absolute;
+        align-items: center;
+        height: 23vh;
+        left: 32%;
+        top: 72%;
+        z-index: 2;
+    }
+    .std{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.75rem;
+        left: 39%;
+        top : 79%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Redressed', cursive;
+        transform: rotate(-16deg);
+        z-index: 3;
+    }
+}
+
+@media (max-width : 820px) {
+    .child{
+        position: absolute;
+        align-items: center;
+        height: 40vh;
+        right: 1%;
+        top: 12%;
+    
+    }
+    .cloud1{
+        position: absolute;
+        height: 15vh;
+        right: 48%;
+        top: 10%;
+    }
+    .cloud2{
+        position: absolute;
+        height: 15vh;
+        right: 25%;
+        top: 10%;
+    }
+    .circle1{
+        position:absolute;
+        align-items: center;
+        height: 35vh;
+        left: 2%;
+        top: 40%;
+    }
+    .hi{
+        position: absolute;
+        font-weight: bold;
+        font-size: 4.75rem;
+        left: 19%;
+        top: 48%;
+        transform: rotate(-20deg);
+        text-transform: uppercase;
+        font-family: 'Festive', cursive;
+    }
+    .circle2{
+        position:absolute;
+        align-items: center;
+        height: 29vh;
+        left: 15%;
+        top: 60%;
+    }
+    .myname{
+        position: absolute;
+        font-weight: bold;
+        font-size: 2rem;
+        left: 21%;
+        top: 68%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        transform: rotate(-18deg);
+    }
+    
+    .circle3{
+        position:absolute;
+        align-items: center;
+        height: 25vh;
+        left: 34%;
+        top: 74%;
+    }
+    .std{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.5rem;
+        left: 45%;
+        top: 82%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Redressed', cursive;
+        transform: rotate(-18deg);
+    }
+}
+@media (max-width : 480px) {
+    .child{
+        position: absolute;
+        align-items: center;
+        height: 30vh;
+        right: -5%;
+        top: 15%;
+    
+    }
+    .cloud1{
+        position: absolute;
+        height: 15vh;
+        right: 48%;
+        top: 10%;
+    }
+    .cloud2{
+        position: absolute;
+        height: 15vh;
+        right: 15%;
+        top: 10%;
+    }
+    .circle1{
+        position:absolute;
+        align-items: center;
+        height: 30vh;
+        left: 2%;
+        top: 45%;
+    }
+    .hi{
+        position: absolute;
+        font-weight: bold;
+        font-size: 4.75rem;
+        left: 18%;
+        top: 49%;
+        transform: rotate(-20deg);
+        text-transform: uppercase;
+        font-family: 'Festive', cursive;
+    }
+    .circle2{
+        position:absolute;
+        align-items: center;
+        height: 27vh;
+        left: 15%;
+        top: 62%;
+    }
+    .myname{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.5rem;
+        left: 20%;
+        top: 68%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        transform: rotate(-18deg);
+    }
+    
+    .circle3{
+        position:absolute;
+        align-items: center;
+        height: 21vh;
+        left: 42%;
+        top: 76%;
+    }
+    .std{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.25rem;
+        left: 50%;
+        top: 82%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Redressed', cursive;
+        transform: rotate(-18deg);
+    }
+}
+
+/* End of circle 3 */
+/* End of landing page */
+
+
+
+/* End of section 1 */
+/* section 2 */
+.about{
+    height: 100vh;
+    background-image: linear-gradient(to top , #F6F6F6 ,#E3FDFD)
+}
+/* End of section 2 */
+/* section 3 */
+.services{
+    height: 100vh;
+    background-image: linear-gradient(to top, #65C18C,#F6F6F6);
+}
+/* End of section 3 */
+/* section 4 */
+.portfolio{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(97, 145, 129), #65C18C);
+    
+}
+/* End of section 4 */
+/* section 5 */
+.contact{
+    height: 50vh;
+    background-image: linear-gradient(to top,blueviolet , rgb(97, 145, 129));
+    
+}
+/* End of section 5 */
