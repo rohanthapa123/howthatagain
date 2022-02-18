@@ -525,14 +525,14 @@ li.fade{
 /* section 4 */
 .portfolio{
     height: 100vh;
-    background-image: linear-gradient(to top, #619181, #65C18C);
+    background-image: linear-gradient(to top, #619181,#65C18C);
     
 }
 /* End of section 4 */
 /* section 5 */
 .contact{
     height: 50vh;
-    background-image: linear-gradient(to top,#8A2BE2 , #619181);
+    background-image: linear-gradient(to top, #8A2BE2,#619181);
     
 }
 /* End of section 5 */
