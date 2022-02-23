@@ -438,7 +438,8 @@ li.fade{
         position: absolute;
         align-items: center;
         height: 30vh;
-        right: -5%;
+        width: 275px;
+        right: 0%;
         top: 15%;
     
     }
@@ -510,6 +511,83 @@ li.fade{
     }
 }
 
+@media screen and  (max-width : 375px) {
+    .child{
+        position: absolute;
+        align-items: center;
+        height: 30vh;
+        width: 275px;
+        right: 0%;
+        top: 15%;
+    
+    }
+    .cloud1{
+        position: absolute;
+        height: 15vh;
+        right: 48%;
+        top: 10%;
+    }
+    .cloud2{
+        position: absolute;
+        height: 15vh;
+        right: 15%;
+        top: 10%;
+    }
+    .circle1{
+        position:absolute;
+        align-items: center;
+        height: 30vh;
+        left: 2%;
+        top: 45%;
+    }
+    .hi{
+        position: absolute;
+        font-weight: bold;
+        font-size: 4.75rem;
+        left: 13%;
+        top: 49%;
+        transform: rotate(-20deg);
+        text-transform: uppercase;
+        font-family: 'Festive', cursive;
+    }
+    .circle2{
+        position:absolute;
+        align-items: center;
+        height: 27vh;
+        left: 15%;
+        top: 62%;
+    }
+    .myname{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.25rem;
+        left: 19%;
+        top: 68%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        transform: rotate(-18deg);
+    }
+    
+    .circle3{
+        position:absolute;
+        align-items: center;
+        height: 21vh;
+        left: 42%;
+        top: 76%;
+    }
+    .std{
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.10rem;
+        left: 50%;
+        top: 82%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Redressed', cursive;
+        transform: rotate(-18deg);
+    }
+}
 /* End of circle 3 */
 /* End of landing page */
 
@@ -671,7 +749,7 @@ li.fade{
         align-items: center;
         justify-content: center;
         height: 25%;
-        padding-top: 25%;
+        padding-top: 125px;
         margin-bottom: -50px;
         font-size: 2.5rem;
         font-family: 'Roboto Slab', serif;
@@ -690,8 +768,61 @@ li.fade{
         width: 85%;
         font-size: 1.27rem;
         justify-content: left;
-        padding-top: 175px;
-        margin-left: 12%;
+        padding-top: 150px;
+        margin-left: 8%;
+        color: #1d3a4d;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #6b6464;   
+        text-align:start;
+    }
+    
+    .picture{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 180px;
+        top: 20%;
+        right: 28%;   
+    }
+    .lock{
+        height: 40%;
+        width: 45%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 32%;
+        opacity: 0.2;
+        filter: blur(2px);
+    }
+}
+@media screen and (max-width : 375px){
+    .h1about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+        padding-top: 25%;
+        margin-bottom: -50px;
+        font-size: 2rem;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        color: #401a64;
+        transition: 0.5s ease-out;
+        cursor: pointer;
+    }
+    .h1about:hover{
+        font-size: 2.6rem;
+    
+    }
+    .aboutme{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        font-size: 1.05rem;
+        justify-content: left;
+        padding-top: 115px;
+        margin-left: 8%;
         color: #1d3a4d;
         font-weight: bold;
         text-shadow: 2px 2px 4px #6b6464;   
