@@ -851,9 +851,280 @@ li.fade{
 }
 /* End of section 2 */
 /* section 3 */
+.about{
+    justify-content: center;
+    align-items: center;
+}
 .services{
     height: 100vh;
     background-image: linear-gradient(to top, #65C18C,#F6F6F6);
+}
+.row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-left: 13%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6%;
+    
+}
+.col{
+    width: 30%;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    
+}
+.col h2{
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 8%;
+    margin: auto;
+    padding: 25px 0 20px;
+    
+    color: rgb(238, 39, 3);
+}
+.row p{
+    width: 84%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 10%;
+    margin: auto;
+    justify-content: center;
+}
+.servicebtn{
+    position: absolute;
+    top: 100%;
+    margin-left: 8%;
+    background-color: #2b75a7;
+    transition: 0.25s;
+}
+.servicebtn:hover{
+    background-color: rgb(142, 240, 14);
+    color: rgb(42, 27, 247);
+    font-size: 1.25rem;
+}
+.row img{
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+.about h2{
+    font-weight: bold;
+}
+.col img{
+    transition: .25s;  
+    
+}
+.col img:hover{
+    width: 360px;
+    height: 350px;
+}
+@media screen and (max-width : 1024px){
+    .row{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25%;
+        
+    }
+    .col{
+        width: 35%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 2px;
+        
+    }
+    .col h2{
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 8%;
+        margin: auto;
+        padding: 25px 0 20px;
+        
+        color: rgb(238, 39, 3);
+    }
+    .row p{
+        width: 88%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-top: 10%;
+        margin: auto;
+        justify-content: center;
+    }
+    .servicebtn{
+        position: absolute;
+        top: 100%;
+        margin-left: 8%;
+        background-color: #2b75a7;
+        transition: 0.25s;
+    }
+    .col img:hover{
+        width: 85%;
+        height: 350px;
+    }
+}
+@media screen and (max-width : 820px){
+    .row{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25%;
+        
+    }
+    .col{
+        width: 35%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 2px;
+        
+    }
+    .col h2{
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 8%;
+        margin: auto;
+        padding: 25px 0 20px;
+        
+        color: rgb(238, 39, 3);
+    }
+    .row p{
+        width: 88%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-top: 10%;
+        margin: auto;
+        justify-content: center;
+    }
+    .servicebtn{
+        position: absolute;
+        top: 100%;
+        margin-left: 8%;
+        background-color: #2b75a7;
+        transition: 0.25s;
+    }
+    .col img:hover{
+        width: 85%;
+        height: 350px;
+    }
+}
+@media screen and (max-width : 480px){
+    .row{
+        display: flex;
+        flex-direction:column;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25%;
+        
+    }
+    services{
+        height: 300vh;
+        background-image: linear-gradient(to top, #65C18C,#F6F6F6);
+    }
+    .col{
+        width: 90%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 2px;
+        
+    }
+    .col h2{
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 8%;
+        margin: auto;
+        padding: 25px 0 20px;
+        
+        color: rgb(238, 39, 3);
+    }
+    .row p{
+        width: 88%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-top: 10%;
+        margin: auto;
+        justify-content: center;
+    }
+    .servicebtn{
+        position: absolute;
+        top: 100%;
+        margin-left: 8%;
+        background-color: #2b75a7;
+        transition: 0.25s;
+    }
+    .col img:hover{
+        width: 85%;
+        height: 350px;
+    }
+}
+@media screen and (max-width : 375px){
+    .row{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25%;
+        
+    }
+    .col{
+        width: 35%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 2px;
+        
+    }
+    .col h2{
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 8%;
+        margin: auto;
+        padding: 25px 0 20px;
+        
+        color: rgb(238, 39, 3);
+    }
+    .row p{
+        width: 88%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-top: 10%;
+        margin: auto;
+        justify-content: center;
+    }
+    .servicebtn{
+        position: absolute;
+        top: 100%;
+        margin-left: 8%;
+        background-color: #2b75a7;
+        transition: 0.25s;
+    }
+    .col img:hover{
+        width: 85%;
+        height: 350px;
+    }
 }
 /* End of section 3 */
 /* section 4 */
@@ -862,11 +1133,15 @@ li.fade{
     background-image: linear-gradient(to top, #619181, #65C18C);
     
 }
+
 /* End of section 4 */
 /* section 5 */
 .contact{
     height: 50vh;
     background-image: linear-gradient(to top,#8A2BE2 , #619181);
     
+}
+#particles-js{
+    background-color: rgb(52, 202, 240);
 }
 /* End of section 5 */
