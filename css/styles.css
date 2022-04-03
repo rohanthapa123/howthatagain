@@ -307,19 +307,7 @@ li.fade{
 .mid-a{
     font-size: 2.1875rem;
 }
-#darkmode{
-    position: fixed;
-}
-.darkmode{
-    color: white;
-    font-size: 0.9rem;
-    padding: 10px;
-    background-color: black;
-    border: black;
-    border-radius: 25px;
-    cursor: pointer;
-    position: absolute;
-}
+
 /* responsiveness */
 @media screen and  (max-width : 1024px) {
     .child{
@@ -1055,7 +1043,7 @@ li.fade{
     transition: 0.25s;
     cursor:pointer;
 }
-#service{
+.serviceabc{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1126,7 +1114,7 @@ li.fade{
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    #service{
+    .serviceabc{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1179,7 +1167,7 @@ li.fade{
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    #service{
+    .serviceabc{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1233,7 +1221,7 @@ li.fade{
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    #service{
+    .serviceabc{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1295,7 +1283,7 @@ li.fade{
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    #service{
+    .serviceabc{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1353,7 +1341,7 @@ li.fade{
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    #service{
+    .serviceabc{
         display: flex;
         align-items: center;
         justify-content: center;
