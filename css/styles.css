@@ -59,7 +59,7 @@ nav{
 
 .nav-links{
     display: flex;
-    justify-content: space-between;
+    gap: 1%;
     width: 40%;
     z-index: 9999;
     
@@ -75,7 +75,7 @@ nav{
 .nav-links li:hover{
     color: aqua;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 /* \End of navigation bar */
 /* contact button */
@@ -111,6 +111,12 @@ nav{
     margin: 5px;
     transition: 0.5s;
     
+}
+@media screen and (max-width: 1372px){
+    .nav-links{
+        justify-content: space-around;
+        width: 45%;
+    }
 }
 @media screen and (max-width: 1343px){
     .nav-links{
@@ -214,7 +220,7 @@ li.fade{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: #E3FDFD;   
+    background-color: #E3FDFD;  
 }
 .clouds{
     opacity: .6;
@@ -301,6 +307,19 @@ li.fade{
 .mid-a{
     font-size: 2.1875rem;
 }
+#darkmode{
+    position: fixed;
+}
+.darkmode{
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: black;
+    border: black;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+}
 /* responsiveness */
 @media screen and  (max-width : 1024px) {
     .child{
@@ -380,7 +399,6 @@ li.fade{
         z-index: 3;
     }
 }
-
 @media screen and  (max-width : 820px) {
     .child{
         position: absolute;
@@ -534,7 +552,6 @@ li.fade{
         transform: rotate(-18deg);
     }
 }
-
 @media screen and  (max-width : 375px) {
     .child{
         position: absolute;
@@ -629,8 +646,9 @@ li.fade{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25%;
-    padding: 175px 100px;
+    height: 15%;
+    margin-top: 10%;
+    padding-bottom: 5%;
     font-size: 3rem;
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
@@ -647,7 +665,7 @@ li.fade{
     font-size: 3.25rem;
 
 }
-.container{
+.containerabout{
     position: relative;
 }
 .aboutme {
@@ -656,7 +674,7 @@ li.fade{
     width: 40%;
     font-size: 1.75rem;
     justify-content: left;
-    padding-top: -5px;
+ 
     margin-left: 15%;
     color: #1d3a4d;
     font-weight: bold;
@@ -674,7 +692,7 @@ li.fade{
     height: 400px;
     width: 400px;
     top: 35%;
-    right: 15%;   
+    right: 13%;   
 }
 .lock{
     height: 60%;
@@ -693,7 +711,6 @@ li.fade{
         width: 35%;
         font-size: 1.75rem;
         justify-content: left;
-        padding-top: -5px;
         margin-left: 12%;
         color: #1d3a4d;
         font-weight: bold;
@@ -1034,9 +1051,14 @@ li.fade{
 .servicebtn{
     position: absolute;
     top: 100%;
-    margin-left: 8%;
     background-color: #2b75a7;
     transition: 0.25s;
+    cursor:pointer;
+}
+#service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .servicebtn:hover{
     background-color: rgb(142, 240, 14);
@@ -1060,6 +1082,7 @@ li.fade{
     width: 360px;
     height: 350px;
 }
+
 @media screen and (max-width : 1024px){
     .row{
         display: flex;
@@ -1100,9 +1123,13 @@ li.fade{
     .servicebtn{
         position: absolute;
         top: 100%;
-        margin-left: 8%;
         background-color: #2b75a7;
         transition: 0.25s;
+    }
+    #service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .col img:hover{
         width: 85%;
@@ -1149,16 +1176,19 @@ li.fade{
     .servicebtn{
         position: absolute;
         top: 100%;
-        margin-left: 8%;
         background-color: #2b75a7;
         transition: 0.25s;
+    }
+    #service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .col img:hover{
         width: 85%;
         height: 350px;
     }
 }
-
 @media screen and (max-width : 768px){
     .row{
         display: flex;
@@ -1199,12 +1229,20 @@ li.fade{
     .servicebtn{
         position: absolute;
         top: 100%;
-        margin-left: 4%;
         font-size: small;
         background-color: #2b75a7;
         transition: 0.25s;
     }
+    #service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .col img{
+        width: 85%;
+        height: 220px;
+    }
+    .col img:hover{
         width: 85%;
         height: 220px;
     }
@@ -1254,9 +1292,17 @@ li.fade{
     .servicebtn{
         position: absolute;
         top: 102%;
-        margin-left:28%;
         background-color: #2b75a7;
         transition: 0.25s;
+    }
+    #service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col img:hover{
+        width: 85%;
+        height: 350px;
     }
 }
 @media screen and (max-width : 375px){
@@ -1304,14 +1350,15 @@ li.fade{
     .servicebtn{
         position: absolute;
         top: 102%;
-        margin-left: 26%;
         background-color: #2b75a7;
         transition: 0.25s;
     }
-    .col img:hover{
-        width: 85%;
-        height: 350px;
+    #service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    
 }
 /* End of section 3 */
 /* section 4 */
@@ -1324,11 +1371,23 @@ li.fade{
 /* End of section 4 */
 /* section 5 */
 .contact{
-    height: 50vh;
-    background-image: linear-gradient(to top,#8A2BE2 , #619181);
-    
+    height: 70vh;
+    position: absolute;
+    background-image: linear-gradient(to top,#a065d6 , #619181);
+    z-index: -1;
+    width: 100%;
 }
 #particles-js{
-    background-color: rgb(52, 202, 240);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 70%;
+  }
+.contacttxt{
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 /* End of section 5 */
