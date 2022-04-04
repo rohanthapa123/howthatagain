@@ -65,18 +65,19 @@ nav{
     
 
 }
-.nav-links li{
+.nav-links .links{
     list-style: none;
     transition-duration: .3s;
     z-index: 9999;
     padding: 0 20px 0 20px;
     margin: auto;
 }
-.nav-links li:hover{
+.nav-links .links:hover{
     color: aqua;
     font-weight: bold;
     font-size: 1.15rem;
 }
+
 /* \End of navigation bar */
 /* contact button */
 .btn {
@@ -94,6 +95,8 @@ nav{
   .btn:hover {
     background: #1e72a6;
     text-decoration: none;
+    font-weight: normal;
+    font-size: 1rem;
   }
 /* End of contact button */
 
@@ -697,7 +700,7 @@ li.fade{
         display: flex;
         align-items: center;
         width: 35%;
-        font-size: 1.75rem;
+        padding-top: 10%;
         justify-content: left;
         margin-left: 12%;
         color: #1d3a4d;
@@ -785,8 +788,8 @@ li.fade{
         align-items: center;
         justify-content: center;
         height: 25%;
-        padding-top: 200px;
-        margin-bottom: -50px;
+        padding-top: 5%;
+        margin-bottom: -1%;
         font-size: 3rem;
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
@@ -835,8 +838,9 @@ li.fade{
         align-items: center;
         justify-content: center;
         height: 25%;
-        padding-top: 130px;
-        margin-bottom: -50px;
+        padding-top: 8%;
+        padding-bottom: 10%;
+        margin-bottom: -5%;
         font-size: 3rem;
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
@@ -855,6 +859,7 @@ li.fade{
         font-weight: bold;
         text-shadow: 2px 2px 4px #6b6464;   
         text-align:start;
+        padding-top: 20%;
         margin-top: -20%;
     }
     .aboutme p{
@@ -886,8 +891,8 @@ li.fade{
         align-items: center;
         justify-content: center;
         height: 25%;
-        padding-top: 125px;
-        margin-bottom: -50px;
+        padding-top: 10%;
+        margin-bottom: 10%;
         font-size: 2.5rem;
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
@@ -905,7 +910,7 @@ li.fade{
         width: 85%;
         font-size: 1.27rem;
         justify-content: left;
-        padding-top: 150px;
+        padding-top: 55%;
         margin-left: 8%;
         color: #1d3a4d;
         font-weight: bold;
@@ -921,7 +926,7 @@ li.fade{
         align-items: center;
         height: 200px;
         width: 180px;
-        top: 20%;
+        top: 25%;
         right: 28%;   
     }
     .lock{
@@ -941,8 +946,8 @@ li.fade{
         align-items: center;
         justify-content: center;
         height: 25%;
-        padding-top: 25%;
-        margin-bottom: -50px;
+        padding-top: 5%;
+        margin-bottom: -5%;
         font-size: 2rem;
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
@@ -960,7 +965,7 @@ li.fade{
         width: 85%;
         font-size: 1.05rem;
         justify-content: left;
-        padding-top: 115px;
+        padding-top: 60%;
         margin-left: 8%;
         color: #1d3a4d;
         font-weight: bold;
@@ -976,7 +981,7 @@ li.fade{
         align-items: center;
         height: 200px;
         width: 180px;
-        top: 20%;
+        top: 23%;
         right: 28%;   
     }
     .lock{
@@ -1185,7 +1190,7 @@ li.fade{
         position: relative;
         align-items: center;
         justify-content: center;
-        padding-top: 20%;
+        padding-top: 40%;
         
     }
     .col{
@@ -1248,7 +1253,7 @@ li.fade{
         
     }
     .services{
-        height: 215vh;
+        height: 205vh;
         background-image: linear-gradient(to top, #65C18C,#F6F6F6);
     }
     .col{
@@ -1364,15 +1369,20 @@ li.fade{
     background-image: linear-gradient(to top,#a065d6 , #619181);
     z-index: -1;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #particles-js{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 70%;
   }
 .contacttxt{
-    z-index: 5;
+    z-index: 9999;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: cursive , sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
