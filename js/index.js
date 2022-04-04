@@ -109,7 +109,7 @@ darkModeBtn.addEventListener("click", function(){
     }
     else
     {
-        darkModeBtn.src = "https://www.rohanthapa.com.np/lightmode.webp" ;
+        darkModeBtn.src = "https://www.rohanthapa.com.np/img/lightmode.webp" ;
         darkModeBtn.style.backgroundColor = "#A6E3E9"; 
         nav.style.background = "linear-gradient(to right top,#CBF1F5, #A6E3E9)";
         homeBack.style.backgroundColor = "#E3FDFD";
