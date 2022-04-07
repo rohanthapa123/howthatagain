@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 #particles-js{
     height: auto;
@@ -25,6 +26,9 @@ hr{
 
     
 }
+li::marker{
+    content:" " ;
+}
 /* STart of SEction 1 */
 /* logo  */
 .rohan{
@@ -37,7 +41,7 @@ hr{
 }
 
 .logo-active{
-    transform: rotate(360deg);
+    transform: rotate(720deg);
     
 }
 .rohan:hover{
@@ -49,8 +53,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: aquamarine; */
-   
     min-height: 10vh;
     position: fixed;
     width: 100%;
@@ -66,6 +68,7 @@ nav{
     width: 40%;
     z-index: 9999;
     
+    
 
 }
 
@@ -75,9 +78,10 @@ nav{
     z-index: 9999;
     padding: 0 20px 0 20px;
     margin: auto;
+    
 }
 .nav-links .links:hover{
-    color: aqua;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 1.15rem;
 }
@@ -185,6 +189,7 @@ nav{
         font-weight: bold;
         width: 60%;
         align-items: center;
+
         transform: translateX(100%);
         transition: 0.5s ease-in;
         
@@ -192,8 +197,13 @@ nav{
     }
     .nav-links li{
         opacity: 0;
+    
         
     }
+    .nav-links .links{
+        margin: -20px auto -200px;
+    }
+    
     .burgerlines{
         display: block;
         cursor: pointer;
@@ -201,6 +211,8 @@ nav{
     }
     
 }
+
+
 .nav-active{
     transform: translateX(0%);
 }
@@ -209,13 +221,14 @@ li.fade{
     z-index: 99;
 }
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-410deg) translate(-6px,8px);
 }
 .toggle .line2{
+    transform: scale(0.2);
     opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(410deg) translate(-5px,-6px);
 }
 
 .wholepage{
@@ -646,19 +659,20 @@ li.fade{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15%;
-    margin-top: 10%;
+    height: 25%;
+    margin-top: 7%;
     padding-bottom: 5%;
     font-size: 3rem;
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
     color: #401a64;
-    transition: 0.5s ease-out;
+    transition: 0.8s ease-out;
     cursor: pointer;
 }
 
 .h1about-active{
-    transform: rotateX(360deg);
+    
+    transform: rotateY(720deg);
     color: rgb(124, 39, 204);
 }
 .h1about:hover{
@@ -703,6 +717,7 @@ li.fade{
     top: 22%;
     opacity: 0.2;
     filter: blur(2px);
+    z-index: 1;
 }
 @media screen and (max-width : 1024px){
     .aboutme {
@@ -1370,13 +1385,38 @@ li.fade{
 /* End of section 3 */
 /* section 4 */
 .portfolio{
-    height: 100vh;
-       
+    height: 100vh;  
 }
 #portfolio{
     background: linear-gradient(to top, #619181, #65C18C);
 }
-
+.video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-50%);
+}
+.btncar{
+    display: flex;
+    position: relative;
+    justify-content:center;
+    top: 25%;
+}
+.carGame{
+    color: rgb(3, 5, 3);
+    width: 150px;
+    height: 50px;
+    background-color: rgb(129, 129, 237);
+    text-align: center;
+    text-justify: center;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+}
+.carGame:hover{
+    background-color: red;
+    color: wheat;
+}
 /* End of section 4 */
 /* section 5 */
 .contact{
@@ -1424,6 +1464,7 @@ li.fade{
     width: 100%;
     border-radius: 50%;
     background-color: #b3dade;
+    
    
 
 }
