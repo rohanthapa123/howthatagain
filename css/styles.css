@@ -1392,15 +1392,16 @@ li.fade{
 }
 .video{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25%,-50%);
+    width: 80%;
+    height: 50%;
+    top: 20%;
+    margin: auto;
 }
 .btncar{
     display: flex;
     position: relative;
     justify-content:center;
-    top: 25%;
+    top: 35%;
 }
 .carGame{
     color: rgb(3, 5, 3);
