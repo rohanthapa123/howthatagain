@@ -1,6 +1,7 @@
 
 const burgerBtn = document.querySelector(".burgerlines");
 const navLinks = document.querySelector(".nav-links");
+var navDarkModeMobile = document.querySelector(".nav-active");
 const links = document.querySelectorAll(".nav-links li");
 const logo = document.querySelector(".logo");
 const rohan = document.querySelector(".rohan");
@@ -23,6 +24,7 @@ var h1About = document.querySelector(".h1about");
 var contactText = document.querySelector(".contacttxt");
 var servicesText = document.querySelectorAll(".serviceParagraph");
 var navAnchor = document.getElementsByTagName("a");
+var burgerLines = document.querySelectorAll(".line");
 
 //i got every single element lol 
 
@@ -98,8 +100,20 @@ function navColorChangeBlack() {
 }
 
 // end of nav bar color change for darkmode
+//to change the burger lines color in darkmode
 
+function brugerChangeWhite(){
+    burgerLines[0].style.backgroundColor = "white";
+    burgerLines[1].style.backgroundColor = "white";
+    burgerLines[2].style.backgroundColor = "white";
+}
+function brugerChangeBlack(){
+    burgerLines[0].style.backgroundColor = "Black";
+    burgerLines[1].style.backgroundColor = "Black";
+    burgerLines[2].style.backgroundColor = "Black";
+}
 
+//end of burger lines darkmode change function
 
 
 
@@ -121,14 +135,15 @@ function navColorChangeBlack() {
 //this is the function to change into darkmode
 
 darkModeBtn.addEventListener("click", function () {
-
     // darkModeBtn.src == "http://127.0.0.1:5500/img/freemoon.png" ? darkModeBtn.src = "http://127.0.0.1:5500/img/lightmode.png" : darkModeBtn.src = "http://127.0.0.1:5500/img/freemoon.png" ;
     //if the image src is moon them the change happens
     if (darkModeBtn.src == "https://www.rohanthapa.com.np/img/freemoon.png") {
         darkModeBtn.src = "https://www.rohanthapa.com.np/img/lightmode.webp"
         darkModeBtn.style.backgroundColor = "#A6E3E5";
         nav.style.background = "#000001";
+        brugerChangeWhite();
         navColorChange(); //fucntion declared above
+        navLinks.style.backgroundColor = "black";
         homeBack.style.backgroundColor = "#0F0E0E";
         aboutBack.style.background = "#0F0E0E";
         aboutText.style.color = "#D3E4CD";
@@ -138,6 +153,7 @@ darkModeBtn.addEventListener("click", function () {
         portfolioBack.style.background = "#0F0F0F";
         contactBack.style.background = "#0F0F0F";
         contactText.style.color = "white";
+        
 
 
 
@@ -149,7 +165,9 @@ darkModeBtn.addEventListener("click", function () {
         darkModeBtn.src = "https://www.rohanthapa.com.np/img/freemoon.png";
         darkModeBtn.style.backgroundColor = "grey";
         nav.style.background = "linear-gradient(to right top,#CBF1F5, #A6E3E9)";
+        brugerChangeBlack();
         navColorChangeBlack(); //fucntion declared above
+        navLinks.style.backgroundColor = "rgb(113, 221, 248)";
         homeBack.style.backgroundColor = "#E3FDFD";
         aboutBack.style.background = "linear-gradient(to top , #F6F6F6 ,#E3FDFD)";
         aboutText.style.color = "#1d3a4d";
@@ -168,10 +186,8 @@ darkModeBtn.addEventListener("click", function () {
 var i = 0;
 setInterval(function () {
 
-    console.log( i +"  hi!");
-    console.log(i +"  This is ");
-    console.log(i +"  Rohan");
-    console.log(i +"  Thapa");
-    console.log(i +"  !sayonara");
+    console.log( i +"  Hi! This is Rohan Thapa. How are your Doing 😊❤️‍🩹.");
+    
     i++;
-}, 1000);
+}, 100);
+
