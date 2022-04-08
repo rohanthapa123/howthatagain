@@ -70,9 +70,9 @@ console.log(servicesText);
 
 //for color change to white and black on darkmode on service paragraph
 function textChange() {
-    servicesText[0].style.color = "white";
-    servicesText[1].style.color = "white";
-    servicesText[2].style.color = "white";
+    servicesText[0].style.color = "#e9edc9"; 
+    servicesText[1].style.color = "#e9edc9";
+    servicesText[2].style.color = "#e9edc9";
 
 }
 function textChangeBlack() {
@@ -167,13 +167,13 @@ darkModeBtn.addEventListener("click", function () {
         nav.style.background = "linear-gradient(to right top,#CBF1F5, #A6E3E9)";
         brugerChangeBlack();
         navColorChangeBlack(); //fucntion declared above
-        navLinks.style.backgroundColor = "rgb(113, 221, 248)";
+        navLinks.style.backgroundColor = "#b9eaef";
         homeBack.style.backgroundColor = "#E3FDFD";
         aboutBack.style.background = "linear-gradient(to top , #F6F6F6 ,#E3FDFD)";
         aboutText.style.color = "#1d3a4d";
         h1About.style.color = "#401a64";
         serviceBack.style.background = "linear-gradient(to top, #65C18C,#F6F6F6)";
-        textChangeBlack(); //fucntion declared above
+        textChangeBlack(); //service text color fucntion declared above
         portfolioBack.style.background = "linear-gradient(to top, #619181, #65C18C)";
         contactBack.style.background = "linear-gradient(to top,#a065d6 , #619181)";
         contactText.style.color = "black";
@@ -183,6 +183,88 @@ darkModeBtn.addEventListener("click", function () {
 }
     
 );
+
+
+//function for contact page
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "thaparohan2019@gmail.com",
+        Password : "64FC19CBE2A9DD1D7B971261321B462BF665",
+        To : 'thaparohan2019@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Messege from Contact form",
+        Body : "Name : " + document.getElementById("name").value
+        + "<br> Email :" + document.getElementById("email").value
+        + "<br> Phone No :" + document.getElementById("phone").value
+        + "<br> Messege :" + document.getElementById("messege").value 
+      
+    }).then(
+        message => alert( "Message sent successfully 😍")
+    );
+}
+
+
+//for tilt like animation for portfolio section
+VanillaTilt.init(document.querySelectorAll(".cards"),{
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare":1
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var i = 0;
 setInterval(function () {
 
@@ -190,4 +272,3 @@ setInterval(function () {
     
     i++;
 }, 100);
-
