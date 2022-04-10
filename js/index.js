@@ -1,3 +1,16 @@
+let viewport = document.querySelector('meta[name=viewport]');
+ viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+
+//  document.documentElement.style.setProperty('overflow', 'auto')
+//  var metaViewport = document.querySelector('meta[name=viewport]')
+//  metaViewport.setAttribute('content', 'height=' + initialHeight + 'px, width=device-width, initial-scale=1.0')
+
+//  var metaViewport = document.querySelector('meta[name=viewport]')
+//  metaViewport.setAttribute('content','width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+
+
+
+
 
 const burgerBtn = document.querySelector(".burgerlines");
 const navLinks = document.querySelector(".nav-links");
@@ -137,9 +150,9 @@ function brugerChangeBlack(){
 darkModeBtn.addEventListener("click", function () {
     // darkModeBtn.src == "http://127.0.0.1:5500/img/freemoon.png" ? darkModeBtn.src = "http://127.0.0.1:5500/img/lightmode.png" : darkModeBtn.src = "http://127.0.0.1:5500/img/freemoon.png" ;
     //if the image src is moon them the change happens
-    if (darkModeBtn.src == "https://www.rohanthapa.com.np/img/freemoon.png") {
-        darkModeBtn.src = "https://www.rohanthapa.com.np/img/lightmode.webp"
-        darkModeBtn.style.backgroundColor = "#A6E3E5";
+    if (darkModeBtn.src == "http://127.0.0.1:5500/img/freemoon.png") {
+        darkModeBtn.src = "http://127.0.0.1:5500/img/lightmode.webp"
+        darkModeBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
         nav.style.background = "#000001";
         brugerChangeWhite();
         navColorChange(); //fucntion declared above
@@ -162,8 +175,8 @@ darkModeBtn.addEventListener("click", function () {
     }
     //if the darkmode icons img is not moon then this happens
     else {
-        darkModeBtn.src = "https://www.rohanthapa.com.np/img/freemoon.png";
-        darkModeBtn.style.backgroundColor = "grey";
+        darkModeBtn.src = "http://127.0.0.1:5500/img/freemoon.png";
+        darkModeBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
         nav.style.background = "linear-gradient(to right top,#CBF1F5, #A6E3E9)";
         brugerChangeBlack();
         navColorChangeBlack(); //fucntion declared above
@@ -206,11 +219,17 @@ function sendEmail(){
 
 
 //for tilt like animation for portfolio section
-VanillaTilt.init(document.querySelectorAll(".cards"),{
+VanillaTilt.init(document.querySelectorAll(".cards",),{
     max: 25,
     speed: 400,
     glare: true,
     "max-glare":1
+});
+VanillaTilt.init(document.querySelectorAll(".col",),{
+    max: 25,
+    speed: 300,
+    glare: true,
+    "max-glare":0.3
 });
 
 
