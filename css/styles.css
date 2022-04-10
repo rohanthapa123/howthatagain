@@ -85,7 +85,7 @@ nav{
 
 .nav-links .links {
   list-style: none;
-  transition-duration: 0.3s;
+  transition: all 0.3s;
   z-index: 9999;
   padding: 0 20px 0 20px;
   margin: auto;
@@ -116,7 +116,7 @@ nav{
 }
 
 .nav-links a:hover {
-  color: #059669;
+  color: #12b886;
 }
 
 
@@ -137,16 +137,14 @@ nav{
   font-family: Georgia;
   color: #ffffff;
   font-size: 1rem;
-  background: #58abe3;
+  background: #2563eb;
   padding: 7px 13px 7px 13px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #1e72a6;
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 1rem;
+  background: #1d4ed8;
+  color: white !important;
 }
 /* End of contact button */
 
