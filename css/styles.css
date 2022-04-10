@@ -84,10 +84,20 @@ nav{
     margin: auto;
     
 }
-.nav-links .links:hover{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 1.15rem;
+
+.nav-links .links::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #1d4ed8;
+  transition: all 0.3s;
+}
+.nav-links .links:hover::after {
+  width: 100%;
+}
+.nav-links .links a:hover {
+  color: #1d4ed8;
 }
 
 /* \End of navigation bar */
