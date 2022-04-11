@@ -150,8 +150,8 @@ function brugerChangeBlack(){
 darkModeBtn.addEventListener("click", function () {
     // darkModeBtn.src == "http://127.0.0.1:5500/img/freemoon.png" ? darkModeBtn.src = "http://127.0.0.1:5500/img/lightmode.png" : darkModeBtn.src = "http://127.0.0.1:5500/img/freemoon.png" ;
     //if the image src is moon them the change happens
-    if (darkModeBtn.src == "http://127.0.0.1:5500/img/freemoon.png") {
-        darkModeBtn.src = "http://127.0.0.1:5500/img/lightmode.webp"
+    if (darkModeBtn.src == "https://www.rohanthapa.com.np/img/freemoon.png") {
+        darkModeBtn.src = "https://www.rohanthapa.com.np/img/lightmode.webp"
         darkModeBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
         nav.style.background = "#000001";
         brugerChangeWhite();
@@ -175,7 +175,7 @@ darkModeBtn.addEventListener("click", function () {
     }
     //if the darkmode icons img is not moon then this happens
     else {
-        darkModeBtn.src = "http://127.0.0.1:5500/img/freemoon.png";
+        darkModeBtn.src = "https://www.rohanthapa.com.np/img/freemoon.png";
         darkModeBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
         nav.style.background = "linear-gradient(to right top,#CBF1F5, #A6E3E9)";
         brugerChangeBlack();
@@ -223,13 +223,22 @@ VanillaTilt.init(document.querySelectorAll(".cards",),{
     max: 25,
     speed: 400,
     glare: true,
-    "max-glare":1
+    "max-glare":1,
+    gyroscopeMinAngleX:     -30,   
+    gyroscopeMaxAngleX:     30,     
+    gyroscopeMinAngleY:     -30,    
+    gyroscopeMaxAngleY:     30,
 });
 VanillaTilt.init(document.querySelectorAll(".col",),{
     max: 25,
     speed: 300,
     glare: true,
-    "max-glare":0.3
+    "max-glare":0.3,
+    gyroscopeMinAngleX:     -30,   
+    gyroscopeMaxAngleX:     30,     
+    gyroscopeMinAngleY:     -30,    
+    gyroscopeMaxAngleY:     30,
+
 });
 
 

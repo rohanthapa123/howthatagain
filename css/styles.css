@@ -1823,7 +1823,7 @@ form button{
   .contactform{
       position: absolute;
       left: 50%;
-      top: 910%;
+      top: 950%;
       
   }
   .contact{
@@ -1831,17 +1831,17 @@ form button{
      
   }
 }
-@media screen and (max-width :390px){
+/* @media screen and (max-width :390px){
   .contactform{
       position: absolute;
       left: 50%;
-      top: 910%;
-      
+      top: 980%;
+     
   }
   .contact{
       height: 100vh;
      
-  }
+  } */
 }
 @media screen and (max-width :375px){
   .contactform{
