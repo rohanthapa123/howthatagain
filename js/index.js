@@ -302,4 +302,4 @@ VanillaTilt.init(document.querySelectorAll(".col",),{
 //     console.log( i +"  Hi! This is Rohan Thapa. How are your Doing 😊❤️‍🩹.");
     
 //     i++;
-// }, 100);
+// }, 1000);

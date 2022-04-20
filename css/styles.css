@@ -258,6 +258,12 @@ nav{
     top:84.4px;
   }
 }
+@media screen and (max-width : 375px) {
+  .nav-links{
+    height:599.3px;
+    top:67.7px;
+  }
+}
 
 
 .nav-active{
@@ -616,10 +622,14 @@ li.fade{
   }
 }
 @media screen and  (max-width : 375px) {
+  .homepage{
+    height: 100vh;
+    min-height: 599.3px;
+  }
   .child{
       position: absolute;
       align-items: center;
-      height: 30vh;
+      height: 179.79px;
       width: 275px;
       right: 0%;
       top: 15%;
@@ -627,20 +637,20 @@ li.fade{
   }
   .cloud1{
       position: absolute;
-      height: 15vh;
+      height: 89.895px;
       right: 48%;
       top: 10%;
   }
   .cloud2{
       position: absolute;
-      height: 15vh;
+      height: 89.895px;
       right: 15%;
       top: 10%;
   }
   .circle1{
       position:absolute;
       align-items: center;
-      height: 30vh;
+      height: 179.79px;
       left: 2%;
       top: 45%;
   }
@@ -657,7 +667,7 @@ li.fade{
   .circle2{
       position:absolute;
       align-items: center;
-      height: 27vh;
+      height: 161.81px;
       left: 15%;
       top: 62%;
   }
@@ -676,7 +686,7 @@ li.fade{
   .circle3{
       position:absolute;
       align-items: center;
-      height: 21vh;
+      height: 125.85px;
       left: 42%;
       top: 76%;
   }
@@ -701,7 +711,7 @@ li.fade{
 /* section 2 */
 .about{
   height: 100vh;
-  min-height:759.6px;
+  
   width: 100%;
      
 }
@@ -964,6 +974,12 @@ li.fade{
   }
 }
 @media screen and (max-width : 480px){
+  .about{
+    height: 100vh;
+    min-height:759.6px;
+    
+       
+  }
   .h1about{
       display: flex;
       align-items: center;
@@ -1019,6 +1035,12 @@ li.fade{
   }
 }
 @media screen and (max-width : 375px){
+  .about{
+    height: 100vh;
+    min-height:599.3px;
+    
+       
+  }
   .h1about{
       display: flex;
       align-items: center;
@@ -1438,6 +1460,7 @@ li.fade{
   }
   .services{
       height: 265vh;
+      min-height: 1588.145px;
   }
   .col{
       width: 95%;
@@ -1717,11 +1740,12 @@ li.fade{
   }
   .portfolio{
       height: 315vh;  
+      min-height: 1887.795px;
       
   }
   .portfoliocontainer{
       position: relative;
-      top: 55%;
+      top: 929.61px;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
@@ -1864,11 +1888,12 @@ form button{
   .contactform{
       position: absolute;
       left: 50%;
-      top: 1115%;
+      top: 5000px;
       
   }
   .contact{
       height: 100vh;
+      min-height: 599.3px;
      
   }
 }
