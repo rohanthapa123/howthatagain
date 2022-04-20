@@ -224,10 +224,10 @@ VanillaTilt.init(document.querySelectorAll(".cards",),{
     speed: 400,
     glare: true,
     "max-glare":1,
-    gyroscopeMinAngleX:     -30,   
-    gyroscopeMaxAngleX:     30,     
-    gyroscopeMinAngleY:     -30,    
-    gyroscopeMaxAngleY:     30,
+    gyroscopeMinAngleX:     -90,   
+    gyroscopeMaxAngleX:     90,     
+    gyroscopeMinAngleY:     -90,    
+    gyroscopeMaxAngleY:     90,
 });
 VanillaTilt.init(document.querySelectorAll(".col",),{
     max: 25,
@@ -241,6 +241,10 @@ VanillaTilt.init(document.querySelectorAll(".col",),{
 
 });
 
+// var input = document.getElementsByTagName('input');
+// input.addEventListener("focus", ()=>{
+
+// })
 
 
 
@@ -292,11 +296,10 @@ VanillaTilt.init(document.querySelectorAll(".col",),{
 
 
 
+// var i = 0;
+// setInterval(function () {
 
-var i = 0;
-setInterval(function () {
-
-    console.log( i +"  Hi! This is Rohan Thapa. How are your Doing 😊❤️‍🩹.");
+//     console.log( i +"  Hi! This is Rohan Thapa. How are your Doing 😊❤️‍🩹.");
     
-    i++;
-}, 100);
+//     i++;
+// }, 100);

@@ -56,7 +56,8 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  height: 10vh;
+  min-height: 84.4px;
   position: fixed;
   width: 100%;
   z-index: 999; 
@@ -603,6 +604,10 @@ li.fade{
       font-family: 'Redressed', cursive;
       transform: rotate(-18deg);
   }
+  .homepage{
+    height: 759.6px;
+    
+  }
 }
 @media screen and  (max-width : 375px) {
   .child{
@@ -690,6 +695,7 @@ li.fade{
 /* section 2 */
 .about{
   height: 100vh;
+  min-height:759.6px;
   width: 100%;
      
 }
@@ -1363,6 +1369,7 @@ li.fade{
   }
   .services{
       height: 205vh;
+      min-height: 1657.18px;
      
   }
   .col{
@@ -1660,16 +1667,17 @@ li.fade{
       font-size: 3rem;
       text-align: center;
       position: relative;
-      top: 5%;
+      top: 59.8px;
       
   }
   .portfolio{
-      height: 227vh;  
+      height: 270vh;
+      height:2050px; 
       
   }
   .portfoliocontainer{
       position: relative;
-      top: 53%;
+      top: 950.588px;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
@@ -1823,13 +1831,16 @@ form button{
   .contactform{
       position: absolute;
       left: 50%;
-      top: 970%;
+      top: 5368.12px;
+      height: 500px;
       
   }
   .contact{
       height: 100vh;
+      min-height: 759.6px;
      
   }
+  
 }
 /* @media screen and (max-width :390px){
   .contactform{
@@ -1842,7 +1853,7 @@ form button{
       height: 100vh;
      
   } */
-}
+
 @media screen and (max-width :375px){
   .contactform{
       position: absolute;
@@ -1915,6 +1926,12 @@ form button{
 /* End of section 5 */
 
 
-.wholepage{
-  position: absolute;
-}
+
+/* @media screen and (orientation:landscape)
+and (min-width :390px)
+and (max-width : 480px){
+  
+  }
+} */
+
+
