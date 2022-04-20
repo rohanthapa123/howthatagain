@@ -252,6 +252,12 @@ nav{
   }
   
 }
+@media screen and (max-width : 480px) {
+  .nav-links{
+    height:709.6px;
+    top:84.4px;
+  }
+}
 
 
 .nav-active{
@@ -532,7 +538,7 @@ li.fade{
   .child{
       position: absolute;
       align-items: center;
-      height: 30vh;
+      height: 227.88px;
       width: 275px;
       right: 0%;
       top: 15%;
@@ -540,20 +546,20 @@ li.fade{
   }
   .cloud1{
       position: absolute;
-      height: 15vh;
+      height: 113.9px;
       right: 48%;
       top: 10%;
   }
   .cloud2{
       position: absolute;
-      height: 15vh;
+      height: 113.9px;
       right: 15%;
       top: 10%;
   }
   .circle1{
       position:absolute;
       align-items: center;
-      height: 30vh;
+      height: 227.88px;
       left: 2%;
       top: 45%;
   }
@@ -570,7 +576,7 @@ li.fade{
   .circle2{
       position:absolute;
       align-items: center;
-      height: 27vh;
+      height: 212.9px;
       left: 15%;
       top: 62%;
   }
@@ -589,7 +595,7 @@ li.fade{
   .circle3{
       position:absolute;
       align-items: center;
-      height: 21vh;
+      height: 159.5px;
       left: 42%;
       top: 76%;
   }
