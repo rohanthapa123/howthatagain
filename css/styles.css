@@ -1108,7 +1108,7 @@ li.fade{
 #services{
   background: linear-gradient(to top, #65C18C,#F6F6F6);
 }
-.services::before{
+.row::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -1117,13 +1117,13 @@ li.fade{
   clip-path:  circle(9.1% at 13% 75%);
   
 }
-.services::after{
+.row::after{
   content: "";
   position: absolute;
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgb(237, 34, 34), rgb(66, 66, 234));
-  clip-path:  circle(6.1% at 53% 55%);
+  clip-path:  circle(18.1% at 85% 45%);
   
 }
 
@@ -1137,6 +1137,9 @@ li.fade{
   padding-top: 6%;
 
   
+}
+.col3 ,.col2{
+  z-index: 2;
 }
 .col{
   width: 27%;
@@ -1182,6 +1185,8 @@ li.fade{
 .servicebtn{
   position: absolute;
   top: 105%;
+  right: 50%;
+  transform: translateX(50%);
   background-color: #2b75a7;
   transition: 0.25s;
   cursor:pointer;
@@ -1192,9 +1197,11 @@ li.fade{
   align-items: center;
   justify-content: center;
 }
-#service1 , #service3{
+ #service1 , #service3{
   display: none;
 }
+
+
 .servicebtn:hover{
   background-color: rgb(177, 231, 107);
   color: rgb(42, 27, 247);
@@ -1400,6 +1407,7 @@ li.fade{
       min-height: 1657.18px;
      
   }
+
   .col{
       width: 95%;
       text-align: justify;
@@ -1426,19 +1434,16 @@ li.fade{
       margin: auto;
       justify-content: center;
   }
-  #service2{
-      display: none;
-  }
-  #service3{
-      display:block;
-      
-  }
+  
   .servicebtn{
       position: absolute;
-      top: 110%;
+      top: 102%;
+      left: 50%;
+      width: 30%;
       transform: translateX(-50%);
       background-color: #2b75a7;
       transition: 0.25s;
+      text-align: center;
   }
   .serviceabc{
       display: flex;

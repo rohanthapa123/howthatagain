@@ -35,7 +35,7 @@
         <li class="links"><a href="#about">About Me</a></li>
         <li class="links"><a href="#services">Services</a></li>
         <li class="links"><a href="#portfolio">Portfolio</a></li>
-        <li><a class="btn" href="#contact">Contact Me</a></li>
+        <li><a class="btn" href="#contact" onmousedown="party.confetti(this)">Contact Me</a></li>
       </ul>
       <div class="burgerlines">
         <div class="line1 line"></div>
@@ -66,14 +66,14 @@
         <h2 class="myname">I am <br>Rohan Thapa</h2>
       </div>
 
-      
+
     </div>
-    
+
     <div class="containerabout about" id="about">
       <hr class="divisionLine">
       <h1 class="h1about">About Me</h1>
       <img src="./img/lock.png" alt="lock" class="lock">
-      
+
 
       <div class="aboutme">
         <p>
@@ -90,34 +90,48 @@
 
 
     </div>
-    
+
     <div class="services" id="services">
       <hr class="divisionLine">
       <div class="row">
         <div class="col col1">
           <div class="service_img"><img src="./img/webdev.jpg" width="85%%" height="330px" alt=""></div>
           <h2>Web Devlopment</h2>
-          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugit. Lorem ipsum dolor sit amet
+          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugit. Lorem ipsum
+            dolor sit amet
             consectetur adipisicing elit. Dicta, asperiores?</p>
-          <p id="service1" class="serviceabc"><a class="servicebtn btn ">Hire Me »</a></p>
+
+        <div id="service1" class="serviceabc">
+        <a class="servicebtn btn ">Hire Me »</a>
+        </div>
+
         </div>
         <div class="col col2">
           <div class="service_img"><img src="./img/uiux.jpg" width="85%" height="330px" alt=""></div>
 
 
           <h2>UI/UX Design</h2>
-          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugit. Lorem ipsum dolor sit amet
+          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugit. Lorem ipsum
+            dolor sit amet
             consectetur adipisicing elit. Dicta, asperiores?</p>
-          <p id="service2" class="serviceabc"><a class="servicebtn btn ">Hire Me »</a></p>
+
+        </div>
+        <div id="service2" class="serviceabc">
+          <a class="servicebtn btn ">Hire Me »</a>
+
         </div>
         <div class="col col3">
           <div class="service_img"><img src="./img/appdev.jpg" width="85%" height="330px" alt=""></div>
 
 
           <h2>App Development</h2>
-          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis eius libero nisi nihil dignissimos
+          <p class="serviceParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis eius libero
+            nisi nihil dignissimos
             modi natus suscipit iste reiciendis.</p>
-          <p id="service3" class="serviceabc"><a class="servicebtn btn ">Hire Me »</a></p>
+
+        </div>
+        <div id="service3" class="serviceabc">
+          <a class="servicebtn btn ">Hire Me »</a>
         </div>
       </div>
     </div>
@@ -130,7 +144,8 @@
           <div class="container">
             <h1>01</h1>
             <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
             <a href="">View It</a>
             <div class="line"></div>
           </div>
@@ -139,7 +154,8 @@
           <div class="container">
             <h1>02</h1>
             <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
             <a href="">View It</a>
             <div class="line"></div>
           </div>
@@ -148,52 +164,56 @@
           <div class="container">
             <h1>03</h1>
             <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
             <a href="">View It</a>
             <div class="line"></div>
           </div>
         </div>
       </div>
-      
-        
-      
+
+
+
     </div>
     <div id="contact" class="contact">
 
       <hr class="divisionLine">
-      
+
     </div>
     <div class="contactform">
-      <form action="" onsubmit="sendEmail(); reset(); return false;" >
+      <form action="" onsubmit="sendEmail(); reset(); return false;">
         <h3>Leave a Messege !</h3>
         <input type="text" id="name" placeholder="Full Name " required>
         <input type="email" id="email" placeholder="Email Address " required>
         <input type="text" id="phone" placeholder="Phone No " required>
-        <textarea name="Leave A messege" id="messege"  rows="4" placeholder="Type Your Messege Here! " required ></textarea>
-        <button type="submit">Send ❤️‍🩹</button>
+        <textarea name="Leave A messege" id="messege" rows="4" placeholder="Type Your Messege Here! "
+          required></textarea>
+        <button type="submit" onmousedown="party.confetti(this)">Send ❤️‍🩹</button>
       </form>
     </div>
     <div class="darkmode" id="darkmodebtn">
       <button class="darkmodebtn">
         <img src="./img/freemoon.png" alt="" id="modechangeimage">
-    </button>
+      </button>
+    </div>
   </div>
-  </div>
 
 
 
-   
+
 
 
 
   <script src="./js/particles.js"></script> <!-- particles for contact section-->
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
   <script src="./js/app.js"></script>
-  
-  <script src="https://smtpjs.com/v3/smtp.js"></script> <!--smtp for contact section-->
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!--smtp for contact section-->
   <script type="text/javascript" src="./js/vanilla-tilt.js"></script> <!-- vanilla js for portfilio section-->
   <script src="./js/index.js"></script>
 
-  
+
 
 </body>
 

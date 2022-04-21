@@ -38,6 +38,7 @@ var contactText = document.querySelector(".contacttxt");
 var servicesText = document.querySelectorAll(".serviceParagraph");
 var navAnchor = document.getElementsByTagName("a");
 var burgerLines = document.querySelectorAll(".line");
+const contact = document.getElementById('contact');
 
 //i got every single element lol 
 
@@ -205,7 +206,7 @@ function sendEmail(){
         Username : "thaparohan2019@gmail.com",
         Password : "64FC19CBE2A9DD1D7B971261321B462BF665",
         To : 'thaparohan2019@gmail.com',
-        From : document.getElementById("email").value,
+        From : 'thaparohan2019@gmail.com',
         Subject : "Messege from Contact form",
         Body : "Name : " + document.getElementById("name").value
         + "<br> Email :" + document.getElementById("email").value
@@ -246,7 +247,15 @@ VanillaTilt.init(document.querySelectorAll(".col",),{
 
 // })
 
+contact.addEventListener("click", ()=>{
+    party.confetti(this, {
+        count: party.variation.range(20, 40),
+        size: party.variation.range(0.8, 1.2),
+        // ... and more!
+    });
 
+
+});
 
 
 
