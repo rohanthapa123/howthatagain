@@ -1819,7 +1819,7 @@ form h3{
   color: #401a64;
   width: 80%;
   max-width: 750px;
-  height: 90%;
+  height: 95%;
   border-radius: 20px;
 }
 form{
@@ -1834,7 +1834,7 @@ form{
 form input, form textarea{
   border: 0;
   margin: 10px 0;
-  padding: 20px;
+  padding: 15px;
   outline: none;
   background: #e0dddd;
   font-size: 1rem;
@@ -1875,6 +1875,11 @@ form button{
       min-height: 759.6px;
      
   }
+  
+}
+.leavemsg{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
   
 }
 /* @media screen and (max-width :390px){
@@ -1927,7 +1932,7 @@ form button{
   overflow: hidden;
   padding: 0;
   margin: 0;
-  
+  z-index: 999999;
 }
 #modechangeimage{
   height: 100%;
@@ -1942,7 +1947,7 @@ form button{
   backdrop-filter: blur(3px);
   border: none;
   cursor: pointer;
-  z-index: 99;
+  z-index: 9999;
 }
 @media screen and (max-width : 600px){
   .darkmode{

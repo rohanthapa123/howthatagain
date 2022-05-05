@@ -199,8 +199,10 @@ darkModeBtn.addEventListener("click", function () {
 );
 
 
-//function for contact page
 function sendEmail(){
+    // file.onchange = function(change) {
+    //     var fileList = file.files;
+    // }
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "thaparohan2019@gmail.com",
@@ -211,7 +213,8 @@ function sendEmail(){
         Body : "Name : " + document.getElementById("name").value
         + "<br> Email :" + document.getElementById("email").value
         + "<br> Phone No :" + document.getElementById("phone").value
-        + "<br> Messege :" + document.getElementById("messege").value 
+        + "<br> Messege :" + document.getElementById("messege").value,
+        // + "<br> Attachment:" + file.files[0],
       
     }).then(
         message => alert( "Message sent successfully 😍")
